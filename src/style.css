@@ -1,1 +1,7 @@
-/* styles go here */
+.main-form__fieldset {
+  margin-bottom: 20px;
+}
+
+.input-container:not(:last-child) {
+  margin-bottom: 10px;
+}
