@@ -13,8 +13,7 @@
   <body>
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="GET"
-      autocomplete="off"
+      method="post"
       onsubmit="onSubmit()"
       class="main-form"
     >
@@ -83,6 +82,7 @@
             id="password"
             name="password"
             minlength="8"
+            maxlength="15"
             required
           >
         </div>
@@ -124,9 +124,10 @@
         </div>
         <div class="input-container">
           <label for="carsBrand">What are your favorite brand of cars?</label>
-          <select id="carsBrand"
-                  name="carsBrand"
-                  multiple
+          <select
+            id="carsBrand"
+            name="carsBrand"
+            multiple
           >
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
